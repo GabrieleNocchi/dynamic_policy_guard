@@ -115,7 +115,7 @@ Vantaggi di numpy array:
 
 
 
-Ho aggiunto anche l'azione extra per fare vedere che è semplice aggiungere azioni nuove.
+Ho aggiunto anche l'azione extra (ENCRYPT_AES) per fare vedere che è semplice aggiungere azioni nuove.
 
 
 
