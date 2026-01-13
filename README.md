@@ -42,7 +42,7 @@ Per il chunking e retrieval ho adottato questa strategia:
    - `ENTITY + ACTION` (es. "Le EMAIL devono essere convertite usando HASH per permettere analisi anonime.") oppure  
    -  solo `ACTION` (es. `"Tutto deve essere REDACT"`).  
 2. Cerco un chunk che contenga sia l’entity che l’azione richiesta.  
-3. Se non esiste, cerco un chunk con solo un’azione (MA senza altra entity) e uso quella.  
+3. Se non esiste, cerco un chunk con solo un’azione (MA senza altre entity) e uso quella.  
 4. Durante la creazione delle policy, elimino le linee dove compare `ACTION:` per rimuovere le definizioni dentro POL-GLOBAL ed escluderle dal chunking.  
 
 Questo approccio si rompe se il formato della policy cambia.  
