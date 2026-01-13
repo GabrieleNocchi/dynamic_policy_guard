@@ -11,7 +11,7 @@ conda activate test_env
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
-Go to: <http://127.0.0.1:8000/docs>
+Vai a: <http://127.0.0.1:8000/docs>
 
 
 
@@ -59,7 +59,7 @@ Per provare Endpoint POST /policy/explain usa un JSON in questo formato:
 }
 
 ```
-### NOTE: policy_version è opzionale in entrambi gli endpoint (puoi ladciarlo vuoto).
+### NOTE: policy_version è opzionale in entrambi gli endpoint (puoi lasciarlo vuoto).
 
 ### unit test
 ```
