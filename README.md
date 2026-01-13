@@ -15,6 +15,51 @@ Go to: <http://127.0.0.1:8000/docs>
 
 
 
+Per provare Ednpoint /redact usa un Json in questo formato:
+
+```
+{
+  "customer_id": "beta",
+  "policy_version": "",
+  "content": {
+    "text": "L'utente Mario Rossi (mario@acme.com) ha chiamato il 333-123456.",
+    "entities": [
+      {
+        "type": "NAME",
+        "value": "Mario Rossi",
+        "start": 9,
+        "end": 20
+      },
+      {
+        "type": "EMAIL",
+        "value": "mario@acme.com",
+        "start": 22,
+        "end": 36
+      },
+      {
+        "type": "PHONE",
+        "value": "333-123456",
+        "start": 53,
+        "end": 63
+      }
+    ]
+  }
+}
+
+```
+
+Per provare Endpoint /policy/explain
+
+```
+{
+  "customer_id": "BETA",
+  "policy_version": "",
+  "entity_type": "PHONE"
+}
+
+```
+### NOTE: policy_version è opzionale in entrambi gli endpoint (puoi ladciarlo vuoto).
+
 ### unit test
 ```
 cd tests
