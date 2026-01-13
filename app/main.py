@@ -5,7 +5,7 @@ from app.retriever import RAGRetriever
 from app.redactor import apply_redaction
 
 app = FastAPI(title="Dynamic Policy Guard")
-
+ENTITY_LIST = ["NAME", "PHONE", "EMAIL"]
 
 policies = load_policies()
 retriever = RAGRetriever(policies)
@@ -38,6 +38,15 @@ from app.interpreter import interpret_policy_rag
 
 @app.post("/policy/explain", response_model=PolicyResponse)
 def policy(req: PolicyRequest):
+    # Check if entity_type is valid
+    if not req.entity_type or req.entity_type.upper() not in ENTITY_LIST:
+        return PolicyResponse(
+            applied_action="NONE",
+            policy_source="",
+            justification=f"No policy found for this personal information detail: {req.entity_type}"
+        )
+
+    # Retrieve relevant policy chunks
     retrieved_chunks = retriever.retrieve(
         customer_id=req.customer_id,
         query=req.entity_type,
@@ -45,17 +54,11 @@ def policy(req: PolicyRequest):
         top_k=5
     )
 
+    # Interpret the policy
     action, snippet = interpret_policy_rag(
         retrieved_chunks,
         req.entity_type
     )
-
-    if not action:
-        return PolicyResponse(
-            applied_action="NONE",
-            policy_source="",
-            justification="No applicable policy found"
-        )
 
     return PolicyResponse(
         applied_action=action,
