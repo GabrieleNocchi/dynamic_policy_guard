@@ -1,0 +1,6 @@
+Se non viene trovata alcuna regola specifica per il cliente, applicare lo standard di sicurezza massimo: REDACT.
+Definizioni delle Azioni:
+REDACT: Sostituisci l'intero valore con la stringa '[REDACTED]'.
+HASH: Calcola l'hash SHA-256 del valore (output hex).
+MASK_LAST_4: Mostra solo gli ultimi 4 caratteri, sostituisci il resto con asterischi (es. ****5678).
+KEEP: Mantieni il dato in chiaro (nessuna modifica)."

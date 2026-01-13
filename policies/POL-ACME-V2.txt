@@ -1,0 +1,4 @@
+Politica di privacy per ACME Corp (Versione 2). I dati di contatto sono sensibili.
+Le EMAIL devono essere convertite usando HASH per permettere analisi anonime.
+I numeri di PHONE devono essere parzialmente oscurati usando MASK_LAST_4 per verifica operatore.
+I NAME (nomi propri) sono considerati pubblici nel nostro caso, quindi KEEP.
