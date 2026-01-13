@@ -99,7 +99,7 @@ Ad esempio, per la policy BETA:
 Se venisse cambiata in: 
 > "Politica per BETA Inc. Siamo in un settore altamente regolamentato. Tutto deve essere REDACT, ma fai KEEP sui PHONE"
 
-Si rompe perchè la policy viene scritta con `ACTION + ENTITY` invece che `ENTITY + ACTION`.  Questo porterebbe due chunk con solo azione (uno con REDACT, uno con KEEP, e un chunk con PHONE), e non funzionerebbe.
+Si rompe perchè la policy viene scritta con `ACTION + ENTITY` invece che `ENTITY + ACTION`.  Questo esempio porterebbe due chunk con solo azione e no entity (uno con REDACT, uno con KEEP) e un chunk con PHONE da solo senza action, e non funzionerebbe.
 
 In sintesi, il vero problema qui è il chunking a causa delle policy scritte senza rispettare un formato preciso. 
 
