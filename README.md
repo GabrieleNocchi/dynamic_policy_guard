@@ -3,22 +3,28 @@ Progettare e implementare "Dynamic Policy Guard", un microservizio HTTP che disa
 
 
 
+```bash
 cd dynamic_policy_guard
 conda create -n test_env python=3.10
 conda activate test_env
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
+
 
 
 
 ### unit test
+```
 cd tests
 pytest test_retriever.py
-
+```
 
 ### notebook test
+```
 cd notebooks
 jupyter notebook
+```
 
 
 
