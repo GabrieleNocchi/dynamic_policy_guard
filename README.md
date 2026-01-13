@@ -48,7 +48,7 @@ Per provare Ednpoint /redact usa un Json in questo formato:
 
 ```
 
-Per provare Endpoint /policy/explain
+Per provare Endpoint /policy/explain usa un JSON in questo formato:
 
 ```
 {
