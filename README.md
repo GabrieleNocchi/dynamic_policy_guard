@@ -16,7 +16,7 @@ Go to: <http://127.0.0.1:8000/docs>
 
 
 
-Per provare Ednpoint /redact usa un Json in questo formato:
+Per provare Ednpoint POST /redact usa un Json in questo formato:
 
 ```
 {
@@ -49,7 +49,7 @@ Per provare Ednpoint /redact usa un Json in questo formato:
 
 ```
 
-Per provare Endpoint /policy/explain usa un JSON in questo formato:
+Per provare Endpoint POST /policy/explain usa un JSON in questo formato:
 
 ```
 {
