@@ -4,6 +4,7 @@ Progettare e implementare "Dynamic Policy Guard", un microservizio HTTP che disa
 
 
 ```bash
+git clone https://github.com/GabrieleNocchi/dynamic_policy_guard.git
 cd dynamic_policy_guard
 conda create -n test_env python=3.10
 conda activate test_env
