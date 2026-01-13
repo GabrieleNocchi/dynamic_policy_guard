@@ -37,7 +37,7 @@ La soluzione migliore sarebbe probabilmente che le policy rispettassero un forma
 - La definizione delle azioni (`ACTIONS`) si trova nella POL-GLOBAL policy (non dovrebbe essere dentro NESSUNA policy).  
 - Non sembra esserci un criterio solido per creare i chunk (ad esempio per riga), quindi l’aggiunta di nuove policy potrebbe rompere la logica che ho usato a seconda di come sono scritte.  
 
-Per il chunking ho adottato questa strategia:  
+Per il chunking e retrieval ho adottato questa strategia:  
 1. Divido il testo delle policy ogni volta che viene trovata una `ACTION`. Questo perché nelle policy le frasi seguono il formato:  
    - `ENTITY + ACTION` (es. "Le EMAIL devono essere convertite usando HASH per permettere analisi anonime.") oppure  
    -  solo `ACTION` (es. `"Tutto deve essere REDACT"`).  
