@@ -16,7 +16,7 @@ Go to: <http://127.0.0.1:8000/docs>
 
 
 
-Per provare Ednpoint POST /redact usa un Json in questo formato:
+Per provare Ednpoint POST /redact usa un JSON in questo formato:
 
 ```
 {
@@ -75,7 +75,7 @@ jupyter notebook
 
 
 
-#### Comments
+#### Commenti
 
 Ho cercato di fare questo esercizio senza modificare minimamente le policy.  
 La soluzione migliore sarebbe probabilmente che le policy rispettassero un formato standard, ad esempio JSON, ma così com’è la situazione presenta alcune difficoltà:
