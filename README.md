@@ -1,5 +1,5 @@
 # dynamic_policy_guard
-Retrieval-Augmented Generation/Execution: progettare e implementare "Dynamic Policy Guard", un microservizio HTTP che disaccoppia la logica di business (il codice) dalla logica di policy (i dati). Il sistema deve decidere come redigere un dato basandosi sul recupero semantico (Retrieval) delle regole da un corpus di documenti, simulando un’architettura RAG (Retrieval-Augmented Generation/Execution).
+Progettare e implementare "Dynamic Policy Guard", un microservizio HTTP che disaccoppia la logica di business (il codice) dalla logica di policy (i dati). Il sistema deve decidere come redigere un dato basandosi sul recupero semantico (Retrieval) delle regole da un corpus di documenti, simulando un’architettura RAG (Retrieval-Augmented Generation/Execution).
 
 
 
